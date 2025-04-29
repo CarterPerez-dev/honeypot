@@ -1,4 +1,120 @@
 # honeypot
+```json
+[
+  {
+    "_id": "68103ae89e98be55e4cd7577",
+    "cookies": {
+      "session": "0iYo-Pg0c4np46avNIEAA-63S3nDtQqOMJJjROMfRRw.j9mbSxFedtg39a2VS3jt5aifo6U"
+    },
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en,en-AU;q=0.9",
+      "Connection": "Keep-Alive",
+      "Cookie": "session=0iYo-Pg0c4np46avNIEAA-63S3nDtQqOMJJjROMfRRw.j9mbSxFedtg39a2VS3jt5aifo6U",
+      "Host": "192.168.1.172:8080",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "X-Forwarded-For": "192.168.1.69",
+      "X-Forwarded-Host": "192.168.1.172:8080",
+      "X-Forwarded-Server": "apache"
+    },
+    "http_method": "GET",
+    "interaction_id": "d695c179284991288db62a2c660496d642489501bc43bf07f7fac6d3b5059bac",
+    "interaction_type": "page_view",
+    "ip_address": "192.168.1.69",
+    "page_type": "admin_panels",
+    "path": "/admin/login",
+    "query_string": {},
+    "referer": "",
+    "timestamp": "2025-04-29T02:35:20.846000",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+  },
+  {
+    "_id": "680f985cc8fd76aa066a7e48",
+    "cookies": {
+      "session": "v3_HmuQXLVqd3hKPwz3bIAmDrrqjaItqFrfGV_kCUio.M1fUQdwJsx-Ia3m3Tf9zULcb36k"
+    },
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en,en-AU;q=0.9",
+      "Cache-Control": "max-age=0",
+      "Connection": "Keep-Alive",
+      "Cookie": "session=v3_HmuQXLVqd3hKPwz3bIAmDrrqjaItqFrfGV_kCUio.M1fUQdwJsx-Ia3m3Tf9zULcb36k",
+      "Host": "192.168.1.172:8080",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "X-Forwarded-For": "192.168.1.69",
+      "X-Forwarded-Host": "192.168.1.172:8080",
+      "X-Forwarded-Server": "apache"
+    },
+    "http_method": "GET",
+    "interaction_id": "c4bb040686cf19633a590cecd2e2228f1fc92a934a56d1e0e1ec1db0a538ba53",
+    "interaction_type": "page_view",
+    "ip_address": "192.168.1.69",
+    "page_type": "admin_panels",
+    "path": "/admin/login",
+    "query_string": {},
+    "referer": "",
+    "timestamp": "2025-04-28T15:01:48.395000",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+  },
+  {
+    "_id": "680f8b8cef0a23521c15f34a",
+    "cookies": {},
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en,en-AU;q=0.9",
+      "Connection": "Keep-Alive",
+      "Host": "192.168.1.172:8080",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+      "X-Forwarded-For": "192.168.1.69",
+      "X-Forwarded-Host": "192.168.1.172:8080",
+      "X-Forwarded-Server": "apache"
+    },
+    "http_method": "GET",
+    "interaction_id": "6b69de945ccddef873139c4873395c20513812b893176aa0a412d9b609c332c9",
+    "interaction_type": "page_view",
+    "ip_address": "192.168.1.69",
+    "page_type": "admin_panels",
+    "path": "/admin/login",
+    "query_string": {},
+    "referer": "",
+    "timestamp": "2025-04-28T14:07:08.251000",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+  }
+]
+```
+# Explanation of Honeypot Interaction Data
+-----
+- `_id`: A unique database identifier for this record (like a fingerprint for the data entry)
+- `cookies`: Shows the visitor had an active session cookie, which helps track their browsing session
+- `headers`: Contains all the technical information sent by the visitor's browser:
+  - `Accept`: Shows what content types the browser can handle (HTML, XML, images, etc.)
+  - `Accept-Encoding`: Compression methods the browser supports (gzip, deflate)
+  - `Accept-Language`: Visitor prefers English content, specifically Australian English as secondary
+  - `Connection`: Browser wants to keep the connection open for faster loading
+  - `Cookie`: The actual session cookie value being sent
+  - `Host`: The server name and port being accessed (your local IP address)
+  - `Upgrade-Insecure-Requests`: Browser is willing to upgrade to HTTPS if available
+  - `User-Agent`: Visitor is using Chrome 135 on Windows 10
+  - `X-Forwarded-For`: Original IP address of visitor 
+  - `X-Forwarded-Host/Server`: Information about the proxy server configuration
+- `http_method`: Visitor used a GET request (just viewing the page, not submitting data)
+- `interaction_id`: A unique ID for this specific visitor interaction
+- `interaction_type`: This was a simple page view (someone looking at the page)
+- `ip_address`: The visitor's IP address on your local network
+- `page_type`: This honeypot is simulating an admin panel login page
+- `path`: The specific URL path visited (/admin/login)
+- `query_string`: Empty object means no extra parameters were in the URL
+- `referer`: Empty value means they typed the URL directly or used a bookmark
+- `timestamp`: Exact date and time of the visit (April 29, 2025, 2:35 AM UTC)
+- `user_agent`: Full details of the visitor's browser and operating system
+
+The other two records follow the same pattern but are from earlier visits (April 28, 2025), with slightly different session cookies and request details but accessing the same admin login honeypot.
 
 
 ```
